@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>New project</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>k2rfhhwcg4rz</unique-id>
+    <saved-with-version>22700</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="LocalStorage" version="1">Local storage</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Platform" version="1">Platform</behavior>
+        <behavior author="Scirra" id="jumpthru" version="1">Jump-thru</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>800</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Downscaling">Medium quality</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Construct 2 splash</prop>
+        <prop name="Orientations">Any</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preload sounds">Yes</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="TiledBackground" sid="6746255646044175">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\jumperpack_kenney\PNG\Background\bg_layer1.png" />
+        </object-type>
+        <object-type name="TiledBackground2" sid="1731143582225109">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\jumperpack_kenney\PNG\Background\bg_layer2.png" />
+        </object-type>
+        <object-type name="TiledBackground3" sid="5323009827976542">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\jumperpack_kenney\PNG\Background\bg_layer3.png" />
+        </object-type>
+        <object-type name="TiledBackground4" sid="4001693441309301">
+            <plugin id="TiledBg" />
+            <texture original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\jumperpack_kenney\PNG\Background\bg_layer4.png" />
+        </object-type>
+        <object-type name="Pijakan" sid="3460991397604875">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Jumpthru" sid="7395664783282125">
+                    <behavior id="jumpthru" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3235366661342852" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\jumperpack_kenney\PNG\Environment\ground_grass_broken.png">
+                        <collision-poly>
+                            <point x="0.0131579" y="0.0106383" />
+                            <point x="0.5" y="0" />
+                            <point x="0.986842" y="0.0531915" />
+                            <point x="0.994737" y="0.303191" />
+                            <point x="0.842105" y="0.297872" />
+                            <point x="0.623684" y="0.446809" />
+                            <point x="0.363158" y="0.223404" />
+                            <point x="0.15" y="0.457447" />
+                            <point x="0" y="0.319149" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="Animation2" pingpong="0" repeatcount="1" repeatto="0" sid="513904706927952" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\jumperpack_kenney\PNG\Environment\ground_grass_small_broken.png">
+                        <collision-poly>
+                            <point x="0.0399999" y="0" />
+                            <point x="0.5" y="0" />
+                            <point x="0.975" y="0.05" />
+                            <point x="0.995" y="0.2" />
+                            <point x="0.715" y="0.22" />
+                            <point x="0.545" y="0.28" />
+                            <point x="0.275" y="0.39" />
+                            <point x="0" y="0.32" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player" sid="1273726478375043">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Platform" sid="2183985825116364">
+                    <behavior id="Platform" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="idle" pingpong="0" repeatcount="1" repeatto="0" sid="4516682639961436" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502488" original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\jumperpack_kenney\PNG\Players\bunny1_stand.png">
+                        <collision-poly>
+                            <point x="0.233333" y="0.139303" />
+                            <point x="0.483333" y="0" />
+                            <point x="0.766667" y="0.139303" />
+                            <point x="0.833333" y="0.552239" />
+                            <point x="0.808333" y="1" />
+                            <point x="0.483333" y="0.995025" />
+                            <point x="0.2" y="1" />
+                            <point x="0.183333" y="0.552239" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="3" loop="0" name="jump" pingpong="0" repeatcount="1" repeatto="0" sid="8585357333308046" speed="5">
+                    <frame duration="1" hotspotX="0.508333" hotspotY="0.557214" original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\jumperpack_kenney\PNG\Players\bunny1_stand.png">
+                        <collision-poly>
+                            <point x="0.333333" y="0" />
+                            <point x="0.5" y="0.243781" />
+                            <point x="0.675" y="0" />
+                            <point x="0.883333" y="0.512438" />
+                            <point x="0.825" y="0.995025" />
+                            <point x="0.516667" y="1" />
+                            <point x="0.216667" y="1" />
+                            <point x="0.133333" y="0.537313" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.508333" hotspotY="0.565445" original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\jumperpack_kenney\PNG\Players\bunny1_ready.png">
+                        <collision-poly>
+                            <point x="0.175" y="0.109948" />
+                            <point x="0.5" y="0.256545" />
+                            <point x="0.825" y="0.109948" />
+                            <point x="0.958333" y="0.497382" />
+                            <point x="0.825" y="0.890052" />
+                            <point x="0.5" y="0.947644" />
+                            <point x="0.175" y="0.890052" />
+                            <point x="0.0416667" y="0.497382" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.61326" original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\jumperpack_kenney\PNG\Players\bunny1_jump.png">
+                        <collision-poly>
+                            <point x="0.3" y="0.248619" />
+                            <point x="0.5" y="0.270718" />
+                            <point x="0.7" y="0.248619" />
+                            <point x="0.86" y="0.497238" />
+                            <point x="0.94" y="0.950276" />
+                            <point x="0.5" y="1" />
+                            <point x="0.06" y="0.950276" />
+                            <point x="0.14" y="0.497238" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+                <animation framecount="1" loop="0" name="fall" pingpong="0" repeatcount="1" repeatto="0" sid="9419298262535282" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.502488" original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\jumperpack_kenney\PNG\Players\bunny1_stand.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LabelScore" sid="3501855924636481">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="PlayerScore" sid="5057710700242125">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextScore" sid="6820682167547883">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BtnLeft" sid="7142145766342105">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8176720179950112" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\onscreencontrols\Sprites\transparentDark\transparentDark22.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="BtnRight" sid="9615342133855718">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3382304493492388" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\onscreencontrols\Sprites\transparentDark\transparentDark23.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="tittle" sid="3429915886254506">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BtnPlay" sid="1149890921928549">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9371735613624082" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\onscreencontrols\Sprites\transparentDark\transparentDark14.png">
+                        <collision-poly>
+                            <point x="0.0416667" y="0.0416667" />
+                            <point x="0.5" y="0" />
+                            <point x="0.958333" y="0.0416667" />
+                            <point x="1" y="0.5" />
+                            <point x="0.958333" y="0.958333" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0416667" y="0.958333" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="4130065051707829">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="Gameover" sid="5771612408321997">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LabelHighScore" sid="7388160749570116">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="2156269135403412">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="LabelScore2" sid="2877963755869995">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextHighScore" sid="1791418371319839">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextScore2" sid="3496197877423187">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="btnRestart" sid="951630125581363">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3265890750231946" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="D:\Dicoding\Construct2 Intel XDK - Game 2\onscreencontrols\Sprites\transparentDark\transparentDark39.png">
+                        <collision-poly>
+                            <point x="0.15" y="0.15" />
+                            <point x="0.5" y="0.0125" />
+                            <point x="0.85" y="0.15" />
+                            <point x="1" y="0.5" />
+                            <point x="0.85" y="0.85" />
+                            <point x="0.5" y="1" />
+                            <point x="0.15" y="0.85" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="LocalStorage" sid="1141014557016568">
+            <plugin id="LocalStorage" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Layout 1.xml</layout>
+        <layout>Layout 2.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Touch" uid="17">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
+        <global-instance type="LocalStorage" uid="18" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
